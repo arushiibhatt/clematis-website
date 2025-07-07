@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brand Colors */
+  --background: #E4DFDA;
+  --text-primary: #00100B;
+  --text-secondary: #F4F6FA;
+
+  --accent-pink: #DC3989;
+  --accent-blue: #2579AF;
+  --accent-aqua: #A4CBC6;
+
+  --soft-blue: #D0EBF6;
+  --soft-pink: #F8DFE3;
+  --blue-dark: #3D5A80;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  src: url('DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  src: url('DMSerifDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('Sora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1e2b2e;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #1e2b2e;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.site-header {
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3890e2;
+}
+
+.hero {
+  background-color: #E4DFDA;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero-heading {
+  font-family: 'Sora', sans-serif; /* or DM Serif Display */
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  color: #00100B;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: #3D5A80;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.info {
+  padding: 3rem 0;
+}
+
+.info h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
